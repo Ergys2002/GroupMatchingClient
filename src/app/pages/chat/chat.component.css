@@ -1,191 +1,182 @@
-.black-background {
-  background-color: black;
+.chat-page {
+  display: flex;
   height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  background-color: #000;
+  color: #fff;
 }
 
-.container {
+.sidebar {
+  width: 15%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100px;
-}
-
-.logo {
-  position: fixed;
-  top: 50px;
-  left: 50px;
-}
-
-.container> button {
-  color: white;
-  background-color: transparent;
-  border: none;
-  margin: 10px 40px;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.container> button:hover {
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.choice-container{
-  display: flex;
-  justify-content: center;
-}
-
-.choice {
-  color: white;
-  background-color: transparent;
-  border: none;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.title{
-  color: #666666;
-}
-
-.scrollable-div {
-  height: 100vh; /* Set a fixed height */
-  overflow-y: auto; /* Enable vertical scrolling */
-}
-
-.cards-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.team-container{
-  width: 65vw;
-  margin-bottom: 20px;
-}
-
-.team-card {
-  display: flex;
-  background-color: #1b1b1b;
-  border-radius: 10px;
+  align-items: center;
   padding: 20px;
-  color: white;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  background-color: #111;
 }
 
-.image-section {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.image-section img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.content-section {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
+.sidebar .logo img {
+  width: 50px;
   margin-bottom: 20px;
 }
 
-.title {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.subtitle {
-  font-size: 18px;
-  color: #bbb;
-}
-
-.description {
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-.team {
-  margin-bottom: 20px;
-}
-
-.team-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.team-list {
+.sidebar nav ul {
   list-style: none;
   padding: 0;
 }
 
-.team-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
+.sidebar nav ul li {
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
 }
 
-.author-icon {
-  width: 10px;
-  height: 10px;
-  background: white;
+.sidebar nav ul li.active {
+  color: #ff6600;
+}
+
+.chat-container {
+  display: flex;
+  flex: 1;
+}
+
+.inbox {
+  width: 25%;
+  background-color: #222;
+  padding: 20px;
+}
+
+.inbox h2 {
+  margin-bottom: 20px;
+}
+
+.inbox-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.inbox-item.active, .inbox-item:hover {
+  background-color: #333;
+}
+
+.inbox-item img {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.crown {
-  margin-left: 5px;
+.chat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
 }
 
-.skills {
-  margin-top: auto;
+.chat-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
 }
 
-.skills-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.skill-button {
-  background: #333;
-  border: 1px solid #555;
-  border-radius: 20px;
-  color: white;
-  padding: 5px 15px;
-  cursor: pointer;
-  font-size: 14px;
+.chat-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   margin-right: 10px;
 }
 
-.skill-button:hover {
-  background: #444;
+.chat-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
-.buttons-container > button {
-  background-color: transparent;
-  height: 200px;
-  width: 200px;
+.message {
+  margin-bottom: 20px;
+}
+
+.message .date {
+  display: block;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.reply {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reply-header {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.reply-header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.reply-body {
+  display: flex;
+  align-items: center;
+}
+
+.reply-body img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.reply-text h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.reply-text p {
+  margin: 0;
+  color: #888;
+}
+
+.reply-message {
+  margin-left: 40px;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
   border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #333;
+  color: #fff;
 }
 
-.bardhi{
-  text-decoration: none;
-  color: white;
-
+.chat-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
 }
-

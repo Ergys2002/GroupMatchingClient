@@ -1,23 +1,64 @@
-<div class="black-background">
-  <div class="row">
-    <div class="col-md-2">
-      <div class="logo">
-        <img src="./assets/img/M.png" alt="">
-      </div>
-      <div class="container">
-        <button><a class="bardhi" [routerLink]="'/home-page'" >Match</a></button>
-        <button> <a class="bardhi" [routerLink]="'/chat'" >Chat</a></button>
-        <button><a class="bardhi" [routerLink]="'/profile'" >Profile</a></button>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
+<div class="chat-page">
+  <div class="sidebar">
+    <div class="logo">
+      <img src="./assets/img/M.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li>Match</li>
+        <li class="active">Chats</li>
+        <li>Profile</li>
+      </ul>
+    </nav>
+  </div>
 
-        </div>
-        <div class="col-md-8">
+  <div class="chat-container">
+    <div class="inbox">
+      <h2>Inbox</h2>
+      <div class="inbox-item active">
+        <img src="assets/img/Group%2054%20(1).png" alt="Olisa Shameti">
+        <span>Olisa Shameti</span>
+      </div>
+      <div class="inbox-item">
+        <img src="assets/img/Group%2048%20(1).png" alt="Alkid Shuli">
+        <span>Alkid Shuli</span>
+      </div>
+      <div class="inbox-item">
+        <img src="assets/img/Group%2053.png" alt="Ergys Xhaollari">
+        <span>Ergys Xhaollari</span>
+      </div>
+    </div>
 
+    <div class="chat-box">
+      <div class="chat-header">
+        <img src="assets/img/Group%2054%20(1).png" alt="Olisa Shameti">
+        <span>Olisa Shameti</span>
+      </div>
+      <div class="chat-content">
+        <div class="message">
+          <span class="date">June 1, 2024</span>
+          <div class="reply">
+            <div class="reply-header">
+              <img src="assets/img/Group%2054%20(1).png" alt="Olisa Shameti">
+              <span>Olisa Shameti replied to your team post</span>
+            </div>
+            <div class="reply-body">
+              <img src="assets/img/Mask%20group%20(1).png" alt="Project">
+              <div class="reply-text">
+                <h3>Protik - Group Match Platform</h3>
+                <p>Breshkat Ninxha</p>
+              </div>
+            </div>
+          </div>
+          <p class="reply-message">Really like this project! Can I join your team?</p>
         </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Send a message">
+        <button type="submit">
+          <img src="path/to/send-icon.png" alt="Send">
+        </button>
       </div>
     </div>
   </div>
 </div>
-
