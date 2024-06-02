@@ -15,6 +15,7 @@ import { NotificationCardComponent } from './shared/notification-card/notificati
 import { TeamCardComponent } from './shared/team-card/team-card.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     TeamCardComponent,
     ChatComponent,
     ProfileComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,156 @@
+.profile-page {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, #000, #1a1a1a);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  padding: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.sidebar nav ul li.active, .sidebar nav ul li:hover {
+  color: white;
+}
+
+.sidebar nav ul li::before {
+  content: '•';
+  color: #ff6600;
+  display: inline-block;
+  width: 20px;
+  margin-left: -20px;
+}
+
+.settings-icon {
+  margin-top: auto;
+  padding: 20px;
+}
+
+.settings-icon img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.profile-content {
+  flex: 1;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 15px;
+  margin: auto 10%;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.remove-image {
+  background-color: transparent;
+  border: none;
+  color: #ff6600;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.remove-image:hover {
+  color: #ff8533;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form label {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.profile-form label span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 1em;
+}
+
+.profile-form input::placeholder {
+  color: #777;
+}
+
+.done-button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.done-button:hover {
+  background-color: #ff8533;
+}
+
+.bardhi{
+  text-decoration: none;
+  color: white;
+
+}

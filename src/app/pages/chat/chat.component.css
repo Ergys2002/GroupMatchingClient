@@ -111,7 +111,9 @@
 
 .reply {
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 30px;
   margin-bottom: 10px;
 }
 
@@ -179,4 +181,14 @@
   color: #fff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.bardhi{
+  text-decoration: none;
+  color: white;
+}
+
+.vl {
+  display: flex;
+  justify-content: flex-start;
 }

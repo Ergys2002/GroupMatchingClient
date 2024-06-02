@@ -7,6 +7,7 @@ import {HomePageComponent} from "./pages/home-page/home-page.component";
 import {SignUpComponent} from "./pages/sign-up/sign-up.component";
 import {ChatComponent} from "./pages/chat/chat.component";
 import {ProfileComponent} from "./pages/profile/profile.component";
+import {SkillsComponent} from "./pages/skills/skills.component";
 
 
 
@@ -18,7 +19,7 @@ const routes: Routes = [
   {path: 'sign-up', component: SignUpComponent},
   {path: 'chat', component: ChatComponent},
   {path: 'profile', component: ProfileComponent},
-
+  {path: 'skills', component: SkillsComponent},
 
   // {path: 'courses', component: CoursesComponent},
   // {path: 'lecturer/:id', component: LecturerComponent},

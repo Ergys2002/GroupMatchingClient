@@ -1,1 +1,50 @@
-<p>profile works!</p>
+<div class="profile-page">
+  <div class="sidebar">
+    <h1>Profile</h1>
+    <nav>
+      <ul>
+        <li><a class="bardhi" [routerLink]="'/home-page'" >Back</a></li>
+        <li ><a class="bardhi">Teams & Projects</a></li>
+        <li><a class="bardhi" [routerLink]="'/skills'" >Skills</a></li>
+        <li ><a class="bardhi">Languages</a></li>
+        <li><a class="bardhi">Interests</a></li>
+        <li><a class="bardhi">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="settings-icon">
+      <img src="./assets/img/settings-icon.png" alt="Settings">
+    </div>
+  </div>
+
+  <div class="profile-content">
+    <div class="profile-header">
+      <div class="profile-image">
+        <img src="./assets/img/Group%2053.png" alt="Profile">
+      </div>
+      <button class="remove-image">Update image</button>
+    </div>
+    <form class="profile-form">
+      <label>
+        <span>Username</span>
+        <input type="text" value="alkid" disabled>
+      </label>
+      <label>
+        <span>Display name</span>
+        <input type="text" value="Olisa Shameti" disabled>
+      </label>
+      <label>
+        <span>What do you do?</span>
+        <input type="text" placeholder="Student, designer etc." disabled>
+      </label>
+      <label>
+        <span>Location</span>
+        <input type="text" placeholder="Where you're based" disabled>
+      </label>
+      <label>
+        <span>Phone number</span>
+        <input type="text" placeholder="+355 6x" disabled>
+      </label>
+<!--      <button type="submit" class="done-button">Done</button>-->
+    </form>
+  </div>
+</div>

@@ -9,10 +9,6 @@ export class HomePageComponent implements OnInit{
   findTeamChosen : boolean = true;
   option : string = 'match'
 
-  setOption(option: string){
-    this.option = option;
-  }
-
   setFindTeamChosen(findTeamChosen: boolean){
     this.findTeamChosen = findTeamChosen;
   }
