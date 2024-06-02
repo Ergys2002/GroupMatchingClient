@@ -1,0 +1,102 @@
+.team-card {
+  display: flex;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.image-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.content-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #bbb;
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.team {
+  margin-bottom: 20px;
+}
+
+.team-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+}
+
+.team-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.author-icon {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.crown {
+  margin-left: 5px;
+}
+
+.skills {
+  margin-top: auto;
+}
+
+.skills-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-button {
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 20px;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.skill-button:hover {
+  background: #444;
+}

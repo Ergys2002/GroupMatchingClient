@@ -1,0 +1,66 @@
+.black-background {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.image {
+  margin-left: 10px;
+  margin-top: 12px;
+  height: 97vh;
+  width: 93vw;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: left;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 4em;
+  max-width: 100%;
+}
+
+.inputi {
+  padding: 10px 10px 10px 40px;
+  border-radius: 25px;
+  background-color: #171717;
+  color: #666666;
+  width: 25vw;
+  max-width: 100%;
+}
+
+.butoni {
+  padding: 10px;
+  align-content: center;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  width: 25vw;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gri {
+  color: #666666;
+  text-decoration: none;
+}

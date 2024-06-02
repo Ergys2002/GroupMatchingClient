@@ -1,0 +1,23 @@
+<div class="black-background">
+  <div class="row">
+    <div class="col-md-6 col-sm-12 img-container ">
+      <img src="./assets/img/login-cover.png" alt="login_cover" class="image">
+    </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="container">
+          <h1>Log In</h1>
+          <p class="mb-5">or <a href="#">Create an account</a></p>
+          <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <input type="text" class="inputi" placeholder="Email"  formControlName="email">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="inputi" placeholder="Password"  formControlName="password">
+            </div>
+            <button type="submit" class="butoni">Enter</button>
+          </form>
+          <p><a class="gri" href="#">Forgot password?</a></p>
+        </div>
+    </div>
+  </div>
+</div>

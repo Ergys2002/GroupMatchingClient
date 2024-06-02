@@ -1,0 +1,49 @@
+<div class="black-background">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="logo">
+          <img src="./assets/img/M.png" alt="">
+        </div>
+        <div class="container">
+          <button><a class="bardhi" [routerLink]="'/home-page'" >Match</a></button>
+         <button> <a class="bardhi" [routerLink]="'/chat'" >Chat</a></button>
+          <button><a class="bardhi" [routerLink]="'/profile'" >Profile</a></button>
+        </div>
+      </div>
+      <div class="col-md-10 scrollable-div">
+        <div class="choice-container d-flex flex-row">
+          <button class="choice m-2 mt-5" (click)="setFindTeamChosen(true)">Find a team</button>
+          <button class="choice m-2 mt-5" (click)="setFindTeamChosen(false)">Find a team member</button>
+        </div>
+        <div class="title m-3">Team invitations</div>
+        <div class="row cards-container">
+          <div class="col-md-4">
+            <app-notification-card></app-notification-card>
+          </div>
+          <div class="col-md-4">
+            <app-notification-card></app-notification-card>
+          </div>
+          <div class="col-md-4">
+            <app-notification-card></app-notification-card>
+          </div>
+        </div>
+        <div class="title m-3">Browse Teams</div>
+        <div class="team-container row">
+          <div class="col-md-11">
+            <app-team-card></app-team-card>
+          </div>
+          <div class="buttons-container flex-column col-md-1">
+            <button >
+              <i class="fa-solid fa-circle-check fa-2xl" style="color: #47ee44;"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-circle-xmark fa-2xl" style="color: #f82112;"></i>
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>

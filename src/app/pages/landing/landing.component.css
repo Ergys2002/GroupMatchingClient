@@ -1,0 +1,73 @@
+.background{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url("../../../assets/img/landing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row {
+  height: 100vh; /* Full viewport height */
+  z-index: 1;
+  position: relative;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.join-now {
+  padding: 10px;
+  align-content: center;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  width: 21vw;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.log-in {
+  padding: 10px;
+  align-content: center;
+  border-radius: 25px;
+  background-color: #264DD9;
+  color: white;
+  width: 21vw;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.headline {
+  max-width: 50%;
+  text-wrap: normal;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+
